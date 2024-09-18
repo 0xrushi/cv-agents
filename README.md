@@ -165,3 +165,5 @@ Let AI revolutionize your job search and open doors to your dream career!
 
 If you find this project helpful, please star this repository and consider contributing by submitting pull requests. Your contributions can help improve the project for everyone!
 
+
+<a href="https://www.producthunt.com/posts/cv-agents?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cv&#0045;agents" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=490277&theme=light" alt="CV&#0032;Agents - Intelligent&#0032;Resumes&#0032;for&#0032;Smarter&#0032;Job&#0032;Hunting | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
