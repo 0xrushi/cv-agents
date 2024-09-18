@@ -2,3 +2,4 @@ crewai
 PyPDF2
 langchain
 crewai-tools
+python-dotenv

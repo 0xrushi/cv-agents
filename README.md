@@ -44,12 +44,18 @@ Let AI revolutionize your job search and open doors to your dream career!
 
 
 ## Setup Instructions
+1. **Set OpenAI API Key**:
+   - Make sure to set your OpenAI API key in the `.env` file:
+     ```
+     OPENAI_API_KEY="your_openai_api_key"
+     ```
 
-1. **Job Description**: 
+2. **Job Description**: 
    - Paste the job description into `job_desc.txt` in the `data` directory.
 
-2. **Resume JSON**:
-   - Edit the `resume.json` in the `data` directory.
+3. **Resume JSON**:
+   - `resume.json` and `job_desc.txt` are the only input files needed.
+   - Edit the `resume.json` in the `data` directory. 
    - Use the following template format to generate your resume JSON from ChatGPT:
      ```json
      {
@@ -132,28 +138,28 @@ Let AI revolutionize your job search and open doors to your dream career!
      }
      ```
 
-3. **Agent Prompts**:
+4. **Agent Prompts**:
    - The agent prompts are stored in `prompts/job_application_prompts.py`.
    - Feel free to edit those prompts for better results based on your specific needs.
 
-4. **Generate PDF**:
+5. **Generate PDF**:
    - To see how your `resume.json` looks as a PDF, run:
      ```bash
      python resume/generator.py
      ```
    - The generated PDFs will be stored in the `outputs/pdf` directory, and their corresponding LaTeX files will be in `outputs/latex/`.
 
-5. **Rename PDF**:
+6. **Rename PDF**:
    - Rename the generated `output_resume.pdf` to `original_long_resume.pdf` and keep it in the `outputs/pdf` directory for later comparison.
 
-6. **Run the Agents**:
+7. **Run the Agents**:
    - Kick off the agents by running:
      ```bash
      python main.py
      ```
    - The agent will write the output to `outputs/pdf/output_resume.pdf`.
 
-7. **Compare Resumes**:
+8. **Compare Resumes**:
    - You can manually compare the two resumes or run:
      ```bash
      python src/scripts/run_compare_pdf.py
