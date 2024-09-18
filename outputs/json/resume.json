@@ -1,0 +1,206 @@
+{
+  "basics": {
+    "name": "Cynthia Dwayne",
+    "label": "Senior Software Developer",
+    "email": "cynthia@beamjobs.com",
+    "phone": "(123) 456-7890",
+    "url": "https://cynthiadwayne.dev",
+    "summary": "Senior Software Developer with 12+ years of experience in full-stack development, cloud technologies, and agile methodologies. Proven track record in developing scalable, well-documented code, optimizing system performance, and leading successful migrations. Passionate about creating efficient, user-centric solutions and mentoring junior developers.",
+    "location": {
+      "city": "Brooklyn",
+      "countryCode": "US",
+      "region": "NY"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "cynthiadwayne",
+        "url": "https://www.linkedin.com/in/cynthiadwayne"
+      },
+      {
+        "network": "GitHub",
+        "username": "cynthiadwayne",
+        "url": "https://github.com/cynthiadwayne"
+      },
+      {
+        "network": "Twitter",
+        "username": "cynthia_codes",
+        "url": "https://twitter.com/cynthia_codes"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "QuickBooks",
+      "position": "Senior Software Developer",
+      "location": "New York, NY",
+      "startDate": "2017-01",
+      "endDate": "Present",
+      "highlights": [
+        "Led development of a microservices architecture, improving system scalability by 40% and reducing latency by 25%",
+        "Implemented CI/CD pipeline using Jenkins and Docker, reducing deployment time by 60% and improving release frequency by 3x",
+        "Optimized cash flow for over 50,000 customers, resulting in a 15% increase in on-time payments",
+        "Led migration from AWS to GCP, reducing cloud costs by $260,000 per year and improving overall system performance by 30%",
+        "Re-architected invoice processing system, saving customers 125,000+ manual hours per month and increasing accuracy by 98%",
+        "Mentored 5 junior developers, improving team productivity by 20%",
+        "Initiated and led bi-weekly tech talks, fostering a culture of continuous learning and innovation within the engineering department",
+        "Developed a new feature for invoice automation, resulting in 20% faster processing time and reducing errors by 15%"
+      ]
+    },
+    {
+      "name": "AMR",
+      "position": "Front-End Developer",
+      "location": "New York, NY",
+      "startDate": "2014-01",
+      "endDate": "2016-12",
+      "highlights": [
+        "Developed reusable components for in-house UI library, saving 125+ development hours monthly",
+        "Created web app MVP for store delivery management platform, resulting in 40% faster order processing",
+        "Enhanced meditation app, increasing user engagement by 35%",
+        "Improved customer conversion rate by 17% through A/B testing and UX optimizations",
+        "Collaborated with UX/UI designers to implement responsive design, improving mobile user satisfaction by 45%",
+        "Implemented a new caching strategy, reducing page load times by 20%"
+      ]
+    },
+    {
+      "name": "TechInnovate",
+      "position": "Software Engineer",
+      "location": "New York, NY",
+      "startDate": "2013-01",
+      "endDate": "2013-12",
+      "highlights": [
+        "Developed and maintained RESTful APIs using Python and Django, serving 10,000+ daily active users with 99.9% uptime",
+        "Implemented automated testing suite, increasing code coverage from 60% to 95% and reducing bug reports by 40%",
+        "Optimized database queries, reducing average page load time by 30%",
+        "Collaborated with UX team to redesign main dashboard, improving user engagement by 25% and reducing customer support tickets by 15%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Delaware",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "location": "Newark, DE",
+      "startDate": "2008-08",
+      "endDate": "2012-05",
+      "gpa": "3.8"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Python",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "Java",
+        "C++",
+        "Ruby"
+      ]
+    },
+    {
+      "name": "Web Technologies",
+      "keywords": [
+        "React",
+        "Redux",
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Flask",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "name": "Database",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": [
+        "AWS (EC2, S3, Lambda)",
+        "GCP (Compute Engine, Cloud Storage)",
+        "Docker",
+        "Kubernetes",
+        "Jenkins"
+      ]
+    },
+    {
+      "name": "Tools & Methodologies",
+      "keywords": [
+        "Git",
+        "JIRA",
+        "Agile/Scrum",
+        "CI/CD"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "date": "2023-05"
+    },
+    {
+      "name": "Google Cloud Professional Cloud Architect",
+      "issuer": "Google Cloud",
+      "date": "2022-11"
+    }
+  ],
+  "projects": [
+    {
+      "name": "OpenSource Contribution Tracker",
+      "description": "Developed a web application to track and showcase open-source contributions for developers",
+      "highlights": [
+        "Built with React, Node.js, and MongoDB",
+        "Integrates with GitHub API to automatically fetch contribution data"
+      ],
+      "keywords": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "url": "https://github.com/cynthiadwayne/opensource-tracker"
+    },
+    {
+      "name": "AI-Powered Code Review Assistant",
+      "description": "Created a machine learning model to assist in code reviews by identifying potential bugs and suggesting improvements",
+      "highlights": [
+        "Utilized Python and TensorFlow for model development",
+        "Integrated with GitLab CI for automated code analysis",
+        "Reduced manual code review time by 30%"
+      ],
+      "keywords": [
+        "Python",
+        "TensorFlow",
+        "Machine Learning",
+        "GitLab CI"
+      ],
+      "url": "https://github.com/cynthiadwayne/ai-code-reviewer"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Open Source Contribution",
+      "keywords": [
+        "Python libraries",
+        "JavaScript frameworks"
+      ]
+    }
+  ]
+}

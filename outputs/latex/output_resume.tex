@@ -1,0 +1,148 @@
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeCertification}[2]{%
+  \item
+  \begin{tabular*}{0.97\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    #1 & \text{#2} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1: #2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0em, itemindent=0em, label={}, itemsep=0ex]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\href{}{\Large Cynthia Dwayne}} & Email: \href{mailto:cynthia@beamjobs.com}{\faEnvelope} cynthia@beamjobs.com \\
+\href{https://www.linkedin.com/in/cynthiadwayne}{LinkedIn: cynthiadwayne} \\\href{https://github.com/cynthiadwayne}{GitHub: cynthiadwayne} \\\hspace{10pt} & Phone: (123) 456-7890\\\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Programming Languages}}{Python, JavaScript (ES6+), TypeScript, Java, C++, Ruby}
+\resumeSubItem{\textbf{Web Technologies}}{React, Redux, Node.js, Express.js, Django, Flask, HTML5, CSS3}
+\resumeSubItem{\textbf{Database}}{PostgreSQL, MySQL, MongoDB}
+\resumeSubItem{\textbf{Cloud \& DevOps}}{AWS (EC2, S3, Lambda), GCP (Compute Engine, Cloud Storage), Docker, Kubernetes, Jenkins}
+\resumeSubItem{\textbf{Tools \& Methodologies}}{Git, JIRA, Agile/Scrum, CI/CD}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{QuickBooks}{2017-01 – Present}
+{Senior Software Developer}{New York, NY}
+\resumeItemListStart
+\resumeItem{Led development of a microservices architecture, improving system scalability by 40\% and reducing latency by 25\%}
+\resumeItem{Implemented CI/CD pipeline using Jenkins and Docker, reducing deployment time by 60\% and improving release frequency by 3x}
+\resumeItem{Optimized cash flow for over 50,000 customers, resulting in a 15\% increase in on-time payments}
+\resumeItem{Led migration from AWS to GCP, reducing cloud costs by \$260,000 per year and improving overall system performance by 30\%}
+\resumeItem{Re-architected invoice processing system, saving customers 125,000+ manual hours per month and increasing accuracy by 98\%}
+\resumeItem{Mentored 5 junior developers, improving team productivity by 20\%}
+\resumeItem{Initiated and led bi-weekly tech talks, fostering a culture of continuous learning and innovation within the engineering department}
+\resumeItem{Developed a new feature for invoice automation, resulting in 20\% faster processing time and reducing errors by 15\%}
+\resumeItemListEnd
+
+\resumeSubheading
+{AMR}{2014-01 – 2016-12}
+{Front-End Developer}{New York, NY}
+\resumeItemListStart
+\resumeItem{Developed reusable components for in-house UI library, saving 125+ development hours monthly}
+\resumeItem{Created web app MVP for store delivery management platform, resulting in 40\% faster order processing}
+\resumeItem{Enhanced meditation app, increasing user engagement by 35\%}
+\resumeItem{Improved customer conversion rate by 17\% through A/B testing and UX optimizations}
+\resumeItem{Collaborated with UX/UI designers to implement responsive design, improving mobile user satisfaction by 45\%}
+\resumeItem{Implemented a new caching strategy, reducing page load times by 20\%}
+\resumeItemListEnd
+
+\resumeSubheading
+{TechInnovate}{2013-01 – 2013-12}
+{Software Engineer}{New York, NY}
+\resumeItemListStart
+\resumeItem{Developed and maintained RESTful APIs using Python and Django, serving 10,000+ daily active users with 99.9\% uptime}
+\resumeItem{Implemented automated testing suite, increasing code coverage from 60\% to 95\% and reducing bug reports by 40\%}
+\resumeItem{Optimized database queries, reducing average page load time by 30\%}
+\resumeItem{Collaborated with UX team to redesign main dashboard, improving user engagement by 25\% and reducing customer support tickets by 15\%}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{University of Delaware}{2008-08 - 2012-05}
+{Bachelor of Science in Computer Science}{Newark, DE}
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{OpenSource Contribution Tracker}}{Developed a web application to track and showcase open-source contributions for developers}
+\resumeSubItem{\textbf{AI-Powered Code Review Assistant}}{Created a machine learning model to assist in code reviews by identifying potential bugs and suggesting improvements}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+\resumeSubHeadingListStart
+\resumeCertification{AWS Certified Solutions Architect - Professional}{2023-05}{}{}
+\resumeCertification{Google Cloud Professional Cloud Architect}{2022-11}{}{}
+\resumeSubHeadingListEnd
+\end{document}

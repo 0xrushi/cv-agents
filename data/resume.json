@@ -1,0 +1,256 @@
+{
+  "basics": {
+    "name": "Cynthia Dwayne",
+    "label": "Senior Software Developer",
+    "email": "cynthia@beamjobs.com",
+    "phone": "(123) 456-7890",
+    "url": "https://cynthiadwayne.dev",
+    "summary": "Results-driven Senior Software Developer with 12+ years of experience in full-stack development, cloud technologies, and agile methodologies. Proven track record in developing scalable, well-documented code, leading successful migrations, and optimizing system performance. Passionate about creating efficient, user-centric solutions, mentoring junior developers, and driving innovation in high-growth environments.",
+    "location": {
+      "city": "Brooklyn",
+      "countryCode": "US",
+      "region": "NY"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "cynthiadwayne",
+        "url": "https://www.linkedin.com/in/cynthiadwayne"
+      },
+      {
+        "network": "GitHub",
+        "username": "cynthiadwayne",
+        "url": "https://github.com/cynthiadwayne"
+      },
+      {
+        "network": "Twitter",
+        "username": "cynthia_codes",
+        "url": "https://twitter.com/cynthia_codes"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "QuickBooks",
+      "position": "Senior Software Developer",
+      "location": "New York, NY",
+      "startDate": "2017-01",
+      "endDate": "Present",
+      "highlights": [
+        "Led development of a microservices architecture, improving system scalability by 40% and reducing latency by 25%",
+        "Implemented CI/CD pipeline using Jenkins and Docker, reducing deployment time by 60% and improving release frequency by 3x",
+        "Spearheaded the payments team to optimize cash flow for over 50,000 customers, resulting in a 15% increase in on-time payments",
+        "Led migration from AWS to GCP, reducing cloud costs by $260,000 per year and improving overall system performance by 30%",
+        "Re-architected invoice processing system, saving customers 125,000+ manual hours per month and increasing accuracy by 98%",
+        "Mentored 5 junior developers, implemented a peer code review process, and established best practices documentation, improving team productivity by 20%",
+        "Initiated and led bi-weekly tech talks, fostering a culture of continuous learning and innovation within the engineering department"
+      ]
+    },
+    {
+      "name": "AMR",
+      "position": "Front-End Developer",
+      "location": "New York, NY",
+      "startDate": "2014-01",
+      "endDate": "2016-12",
+      "highlights": [
+        "Developed reusable components for in-house UI library, saving 125+ development hours monthly and improving consistency across products",
+        "Created web app MVP for store delivery management platform serving 200+ business customers using React and Redux, resulting in 40% faster order processing",
+        "Enhanced meditation app (5,000+ monthly users) with audio/video upload features, increasing user engagement by 35% and session duration by 25%",
+        "Improved customer conversion rate by 17% through A/B testing and UX optimizations, generating $500,000+ in incremental annual revenue",
+        "Collaborated with UX/UI designers to implement responsive design, improving mobile user satisfaction by 45%",
+        "Optimized front-end performance, reducing page load times by 40% and improving SEO rankings"
+      ]
+    },
+    {
+      "name": "TechInnovate",
+      "position": "Software Engineer",
+      "location": "New York, NY",
+      "startDate": "2013-01",
+      "endDate": "2013-12",
+      "highlights": [
+        "Developed and maintained RESTful APIs using Python and Django, serving 10,000+ daily active users with 99.9% uptime",
+        "Implemented automated testing suite using Pytest, increasing code coverage from 60% to 95% and reducing bug reports by 40%",
+        "Optimized database queries and implemented caching strategies, reducing average page load time by 30% and improving user experience",
+        "Collaborated with UX team to redesign main dashboard, improving user engagement by 25% and reducing customer support tickets by 15%",
+        "Contributed to open-source projects, including bug fixes and performance improvements for popular Python libraries"
+      ]
+    },
+    {
+      "name": "Kelly",
+      "position": "Help Desk Analyst",
+      "location": "New York, NY",
+      "startDate": "2012-06",
+      "endDate": "2013-01",
+      "highlights": [
+        "Diagnosed and resolved technical issues for 30+ clients daily, maintaining a 92% first-call resolution rate",
+        "Created and managed user accounts for 50+ clients weekly, ensuring proper access levels and security protocols",
+        "Developed and maintained comprehensive technical documentation, reducing average call handling time by 20%",
+        "Received 'Employee of the Month' award for exceptional customer service and problem-solving skills"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Delaware",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "location": "Newark, DE",
+      "startDate": "2008-08",
+      "endDate": "2012-05",
+      "gpa": "3.8",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Database Systems",
+        "Computer Networks",
+        "Software Engineering",
+        "Artificial Intelligence",
+        "Web Development"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Python",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "Java",
+        "C++",
+        "Ruby"
+      ]
+    },
+    {
+      "name": "Web Technologies",
+      "keywords": [
+        "React",
+        "Redux",
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Flask",
+        "HTML5",
+        "CSS3",
+        "SASS/LESS"
+      ]
+    },
+    {
+      "name": "Database",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": [
+        "AWS (EC2, S3, Lambda)",
+        "GCP (Compute Engine, Cloud Storage)",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "GitLab CI",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "Tools & Methodologies",
+      "keywords": [
+        "Git",
+        "JIRA",
+        "Agile/Scrum",
+        "TDD",
+        "CI/CD",
+        "Microservices Architecture"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "date": "2023-05"
+    },
+    {
+      "name": "Google Cloud Professional Cloud Architect",
+      "issuer": "Google Cloud",
+      "date": "2022-11"
+    },
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "Cloud Native Computing Foundation",
+      "date": "2021-09"
+    }
+  ],
+  "projects": [
+    {
+      "name": "OpenSource Contribution Tracker",
+      "description": "Developed a web application to track and showcase open-source contributions for developers",
+      "highlights": [
+        "Built with React, Node.js, and MongoDB",
+        "Integrates with GitHub API to automatically fetch contribution data",
+        "Implemented user authentication and profile management"
+      ],
+      "keywords": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "GitHub API"
+      ],
+      "url": "https://github.com/cynthiadwayne/opensource-tracker"
+    },
+    {
+      "name": "AI-Powered Code Review Assistant",
+      "description": "Created a machine learning model to assist in code reviews by identifying potential bugs and suggesting improvements",
+      "highlights": [
+        "Utilized Python and TensorFlow for model development",
+        "Integrated with GitLab CI for automated code analysis",
+        "Reduced manual code review time by 30%"
+      ],
+      "keywords": [
+        "Python",
+        "TensorFlow",
+        "Machine Learning",
+        "GitLab CI"
+      ],
+      "url": "https://github.com/cynthiadwayne/ai-code-reviewer"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Open Source Contribution",
+      "keywords": [
+        "Python libraries",
+        "JavaScript frameworks"
+      ]
+    },
+    {
+      "name": "Tech Blogging",
+      "keywords": [
+        "Software architecture",
+        "Best practices",
+        "Emerging technologies"
+      ]
+    },
+    {
+      "name": "Hackathons",
+      "keywords": [
+        "AI/ML challenges",
+        "Web development competitions"
+      ]
+    }
+  ]
+}

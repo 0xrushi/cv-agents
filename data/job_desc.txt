@@ -1,0 +1,47 @@
+About the job
+Nova Intelligent Systems is an innovative startup quantitative hedge fund at the forefront of automating key aspects of the research and investment process. Founded by a veteran of Two Sigma, Citadel, and Google, we're in the pre-launch phase with strong interest from institutional investors. We're seeking talented individuals excited about joining a high-potential venture in its early stages.
+
+The Role
+We're looking for an experienced Software Engineer to join our team and play a crucial role in developing cutting-edge technologies for quantitative finance. This position offers significant autonomy and the opportunity to work on complex, impactful projects alongside Nova’s founder in Durham, NC.
+
+Key Responsibilities
+Design and implement high-performance, scalable software systems for quantitative trading and research
+Develop and optimize machine learning algorithms for model generation, training, and deployment
+Build robust infrastructure to support data science and machine learning workflows
+Create efficient, low-latency trading systems using Rust and other high-performance languages
+Collaborate with quantitative researchers to implement and optimize trading algorithms
+Contribute to the design and development of distributed systems for processing high-frequency financial data
+Implement and maintain risk management tools and execution algorithms
+Ensure system reliability, performance, and availability in a high-stakes trading environment
+
+Required Qualifications
+Bachelor's or Master's degree in Computer Science, Software Engineering, or related field
+5+ years of professional software development experience
+Strong proficiency in at least one of the following: Rust, C++, Java
+Solid understanding of data structures, algorithms, and software design principles
+Experience designing systems and algorithms and overseeing their implementation
+Strong problem-solving skills and ability to work independently
+
+Preferred Qualifications
+Experience in quantitative finance or algorithmic trading
+Knowledge of artificial intelligence, bayesian reasoning, or data science.
+Familiarity with low-level systems concepts including networking, concurrency, and event-driven systems
+Experience with distributed systems and high-performance computing
+Familiarity with cloud computing platforms (e.g., GCP, Azure, AWS)
+
+Key Attributes
+Proactive mindset with the ability to anticipate and address business and team needs
+Strong collaboration skills and self-management capabilities
+Effective independent learner who asks insightful questions
+Track record of solving challenging problems with innovative solutions
+Ability to thrive in a fast-paced, dynamic startup environment
+
+What We Offer
+Opportunity to be an early member of a high-potential quantitative hedge fund
+Profit-sharing plan that aligns with the company's success
+Challenging and intellectually stimulating work environment
+Chance to work with cutting-edge technologies in quantitative finance
+Collaborative team culture with direct access to leadership
+Unlimited PTO
+
+Interested candidates who meet the above qualifications, are available to work in Durham, NC, and are excited about the prospect of joining a startup quantitative fund are encouraged to apply. Nova Intelligent Systems is an equal opportunity employer and values diversity in our workforce.
