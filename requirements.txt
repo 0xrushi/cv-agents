@@ -1,5 +1,12 @@
+crewai_tools
 crewai
-PyPDF2
-langchain
-crewai-tools
+diff-pdf-visually
+deepdiff
 python-dotenv
+fitz
+reportlab
+requests
+textwrap3
+websockets
+pymupdf
+pypdf2

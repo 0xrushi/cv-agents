@@ -208,12 +208,13 @@ def generate():
 
     try:
         pdf_path = "outputs/pdf/output_resume.pdf"
+        
+        backend_url = os.getenv('WEBSOCKET_SERVER_BACKEND_URL', 'http://127.0.0.1:8041')
         response = requests.post(
-            'http://127.0.0.1:8041/sendpdf',
+            f'{backend_url}/sendpdf',
             headers={"Content-Type": "application/json"},
             json={"path": pdf_path}
         )
-
         # Check response status if needed
         if response.status_code == 200:
             logger.info("PDF path sent successfully.")
@@ -238,8 +239,9 @@ def generate_from_data(d: dict):
 
     try:
         pdf_path = "outputs/pdf/output_resume.pdf"
+        backend_url = os.getenv('WEBSOCKET_SERVER_BACKEND_URL', 'http://127.0.0.1:8041')
         response = requests.post(
-            'http://127.0.0.1:8041/sendpdf',
+            f'{backend_url}/sendpdf',
             headers={"Content-Type": "application/json"},
             json={"path": pdf_path}
         )

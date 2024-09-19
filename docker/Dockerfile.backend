@@ -1,0 +1,24 @@
+FROM python:3.11-slim
+
+# Install necessary packages
+RUN apt-get update && apt-get install -y \
+    git \
+    vim \
+    nano \
+    gcc \
+    texlive \
+    texlive-latex-extra \
+    && rm -rf /var/lib/apt/lists/*  # Clean up to reduce image size
+
+WORKDIR /app
+
+# Copy the requirements file and install dependencies
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# Copy the application code
+COPY . .
+
+EXPOSE 8041
+
+CMD ["python", "src/webserver.py"]

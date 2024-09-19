@@ -39,8 +39,9 @@ def save_resume_json(resume_data: Union[str, dict]) -> str:
             return "Error: Input must be a JSON string or a Python dictionary."
         
         try: 
+            backend_url = os.getenv('WEBSOCKET_SERVER_BACKEND_URL', 'http://127.0.0.1:8041')
             response = requests.post(
-                'http://127.0.0.1:8041/sendjson',
+                f'{backend_url}/sendjson',
                 headers={"Content-Type": "application/json"},
                 json=resume_json
             )

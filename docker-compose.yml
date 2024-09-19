@@ -1,0 +1,28 @@
+services:
+  websocketserver:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    ports:
+      - "8041:8041"
+    volumes:
+      - .:/app
+  
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    command: ["python", "main.py"]
+    volumes:
+      - .:/app
+    environment:
+      - WEBSOCKET_SERVER_BACKEND_URL=http://websocketserver:8041
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - WEBSOCKET_SERVER_BACKEND_URL=http://websocketserver:8041

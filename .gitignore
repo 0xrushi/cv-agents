@@ -3,3 +3,7 @@ __pycache__
 .vscode/settings.json
 .DS_Store
 trained_agents_data.pkl
+src/webserver_logs.py
+node_modules
+.next
+.vscode
