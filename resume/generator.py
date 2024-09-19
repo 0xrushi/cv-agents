@@ -221,6 +221,35 @@ def generate():
             logger.info(f"Failed to send PDF path. Response: {response.text}")
     except Exception as e:
         logger.error(f"Exception when sending pdf {e}")
+        
+def generate_from_data(d: dict):
+    """
+    Generates a resume from a JSON d and converts it to PDF.
+    """
+    
+    json_path = "outputs/json/temp_cache.json"
+    with open(json_path, 'w') as f:
+        json.dump(d, f, indent=2)
+    
+    logging.info(f"Saved input data to {json_path}")
+    
+    render_resume(json_path, "outputs/latex/output_resume.tex")
+    _ = render_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
+
+    try:
+        pdf_path = "outputs/pdf/output_resume.pdf"
+        response = requests.post(
+            'http://127.0.0.1:8041/sendpdf',
+            headers={"Content-Type": "application/json"},
+            json={"path": pdf_path}
+        )
+
+        if response.status_code == 200:
+            logger.info("PDF path sent successfully.")
+        else:
+            logger.info(f"Failed to send PDF path. Response: {response.text}")
+    except Exception as e:
+        logger.error(f"Exception when sending pdf {e}")
 
 if __name__ == "__main__":
     generate()

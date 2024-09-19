@@ -4,6 +4,12 @@ import base64
 from aiohttp import web
 from aiohttp import WSMsgType
 import websockets
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from resume.generator import generate_from_data
 
 connected_clients = set()
 
@@ -23,6 +29,17 @@ async def websocket_handler(request):
                     # Broadcast to all clients
                     for client in connected_clients:
                         await client.send_json({'type': 'json', 'content': data['content']})
+                elif data['type'] == 'pdf':
+                    print('Received PDF request')
+                    pdf_path = data.get('path')
+                    if pdf_path:
+                        with open(path, 'rb') as file:
+                            pdf_content = await file.read()
+                        
+                        await ws.send_bytes(pdf_content)
+                        print(f'Sent PDF to client (size: {len(pdf_content)} bytes)')
+                    else:
+                        await ws.send_json({'type': 'error', 'message': 'PDF path not provided'})
             elif msg.type == WSMsgType.ERROR:
                 print(f'WebSocket connection closed with exception {ws.exception()}')
     finally:

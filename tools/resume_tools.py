@@ -121,3 +121,8 @@ def pdf_comparison_tool(pdf_file1: str, pdf_file2: str, output_pdf: str) -> str:
         return f"Comparison PDF successfully generated and saved to {output_pdf}"
     except Exception as e:
         return f"Error generating comparison PDF: {str(e)}"
+    
+if __name__ == "__main__":
+    with open("outputs/json/resume.json", "r") as f:
+        d = json.load(f)
+    save_resume_json(d)
