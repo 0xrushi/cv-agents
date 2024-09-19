@@ -4,6 +4,13 @@ import os
 from typing import Union
 import sys
 from crewai_tools import tool
+import requests
+import logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Added datetime format
+)
+logger = logging.getLogger(__name__)
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -31,7 +38,20 @@ def save_resume_json(resume_data: Union[str, dict]) -> str:
         else:
             return "Error: Input must be a JSON string or a Python dictionary."
         
-        # Save the JSON data to 'resume.json'
+        try: 
+            response = requests.post(
+                'http://127.0.0.1:8041/sendjson',
+                headers={"Content-Type": "application/json"},
+                json=resume_json
+            )
+
+            if response.status_code == 200:
+                logger.info("JSON sent successfully to the frontend")
+            else:
+                logger.info(f"Failed to send JSON. {response.text}")
+        except Exception as e:
+            logger.error(f"Exception when sending JSON {e}")
+
         with open('outputs/json/resume.json', 'w') as f:
             json.dump(resume_json, f, indent=2)
         return "Resume JSON successfully saved to 'outputs/json/resume.json'."

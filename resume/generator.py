@@ -2,6 +2,14 @@ import json
 import subprocess
 import os
 import sys
+import requests
+
+import logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Added datetime format
+)
+logger = logging.getLogger(__name__)
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -197,6 +205,22 @@ def generate():
     """
     render_resume("outputs/json/resume.json", "outputs/latex/output_resume.tex")
     render_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
+
+    try:
+        pdf_path = "outputs/pdf/output_resume.pdf"
+        response = requests.post(
+            'http://127.0.0.1:8041/sendpdf',
+            headers={"Content-Type": "application/json"},
+            json={"path": pdf_path}
+        )
+
+        # Check response status if needed
+        if response.status_code == 200:
+            logger.info("PDF path sent successfully.")
+        else:
+            logger.info(f"Failed to send PDF path. Response: {response.text}")
+    except Exception as e:
+        logger.error(f"Exception when sending pdf {e}")
 
 if __name__ == "__main__":
     generate()
