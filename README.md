@@ -1,10 +1,6 @@
 # CV Agents
 ![images/logo.jpeg](images/logo.jpeg)
 
-[<img src="images/video_thumbnail.png" width="80%">](https://odysee.com/$/embed/@rushi:2/cv-agents-final:1)
-
-
-
 Introducing CV Agents, your personal career advancement team powered by artificial intelligence.
 
 Imagine having a top hiring manager, an expert CV editor, and a savvy job seeker working tirelessly to perfect your CV. That's exactly what CV Agents does!
@@ -28,8 +24,6 @@ Key advantages of CV Agents:
 6. **Smart selection**: If you have an extensive list of experiences or projects, CV Agents intelligently selects the most relevant ones for the job you're applying to, ensuring your CV remains impactful and concise.
 
 Let AI revolutionize your job search and open doors to your dream career!
-
-## Video
 
 ## Screenshots 
 
@@ -165,6 +159,12 @@ Let AI revolutionize your job search and open doors to your dream career!
      python src/scripts/run_compare_pdf.py
      ```
    - This will generate a comparison PDF `outputs/pdf/compare_diff.pdf` of the two resumes.
+
+
+## Latest upcoming feature
+- Realtime UI! 
+
+![ScreenRecording2024-09-18at11 47 43PM-ezgif com-speed](https://github.com/user-attachments/assets/dc1a9488-6b7f-445d-813d-02e005596163)
 
 
 ## Contribution
