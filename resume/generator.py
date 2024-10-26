@@ -164,7 +164,7 @@ def generate_latex_resume(json_data):
     latex_content += r"""\resumeSubHeadingListEnd
 
 %-----------CERTIFICATIONS-----------------
-\section{Certifications}
+\section{Achievements/ Certs}
 \resumeSubHeadingListStart
 """
 

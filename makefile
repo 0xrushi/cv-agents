@@ -2,6 +2,7 @@
 
 .PHONY: render
 render:
+	cp data/resume.json outputs/json/resume.json
 	python resume/generator.py
 
 .PHONY: clean
