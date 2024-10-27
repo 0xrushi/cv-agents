@@ -1,6 +1,7 @@
 import json
 import subprocess
 import os
+import glob
 import sys
 import requests
 
@@ -177,7 +178,7 @@ def generate_latex_resume(json_data):
 
     return latex_content
 
-def render_resume(json_file_path, output_file_path):
+def convert_tex_to_pdf(json_file_path, output_file_path):
     """
     Loads JSON data from a file, generates LaTeX content, and writes it to a file.
 
@@ -196,6 +197,7 @@ def render_resume(json_file_path, output_file_path):
     with open(output_file_path, 'w') as latex_file:
         latex_file.write(latex_content)
 
+    _ = [os.remove(f) for f in glob.glob("outputs/latex/*") if not f.endswith((".pdf", ".tex"))]
     print(f"LaTeX resume has been generated and saved to {output_file_path}")
 
 
@@ -203,7 +205,7 @@ def generate():
     """
     Generates a resume from a JSON file and converts it to PDF.
     """
-    render_resume("outputs/json/resume.json", "outputs/latex/output_resume.tex")
+    convert_tex_to_pdf("outputs/json/resume.json", "outputs/latex/output_resume.tex")
     render_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
 
     try:
@@ -234,7 +236,7 @@ def generate_from_data(d: dict):
     
     logging.info(f"Saved input data to {json_path}")
     
-    render_resume(json_path, "outputs/latex/output_resume.tex")
+    convert_tex_to_pdf(json_path, "outputs/latex/output_resume.tex")
     _ = render_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
 
     try:
