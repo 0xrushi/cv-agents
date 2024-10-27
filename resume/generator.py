@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from resume.latex_utils import render_latex_to_pdf, escape_latex
+from resume.latex_utils import convert_latex_to_pdf, escape_latex
 
 def generate_latex_resume(json_data):
     """
@@ -178,7 +178,7 @@ def generate_latex_resume(json_data):
 
     return latex_content
 
-def convert_tex_to_pdf(json_file_path, output_file_path):
+def convert_json_to_tex(json_file_path, output_file_path):
     """
     Loads JSON data from a file, generates LaTeX content, and writes it to a file.
 
@@ -205,8 +205,8 @@ def generate():
     """
     Generates a resume from a JSON file and converts it to PDF.
     """
-    convert_tex_to_pdf("outputs/json/resume.json", "outputs/latex/output_resume.tex")
-    render_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
+    convert_json_to_tex("outputs/json/resume.json", "outputs/latex/output_resume.tex")
+    convert_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
 
     try:
         pdf_path = "outputs/pdf/output_resume.pdf"
@@ -236,8 +236,8 @@ def generate_from_data(d: dict):
     
     logging.info(f"Saved input data to {json_path}")
     
-    convert_tex_to_pdf(json_path, "outputs/latex/output_resume.tex")
-    _ = render_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
+    convert_json_to_tex(json_path, "outputs/latex/output_resume.tex")
+    _ = convert_latex_to_pdf("outputs/latex/output_resume.tex", "outputs/pdf")
 
     try:
         pdf_path = "outputs/pdf/output_resume.pdf"

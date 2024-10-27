@@ -27,8 +27,8 @@ grandparent_dir = os.path.dirname(parent_dir)
 sys.path.insert(0, parent_dir)
 sys.path.append(grandparent_dir)
 
-from resume.latex_utils import render_latex_to_pdf
-from resume.generator import convert_tex_to_pdf
+from resume.latex_utils import convert_latex_to_pdf
+from resume.generator import convert_json_to_tex
 
 app = FastAPI()
 
@@ -58,12 +58,12 @@ async def generate_resume(resume_data: ResumeData):
         # Generate LaTeX
         latex_path = "outputs/latex/output_resume.tex"
         os.makedirs(os.path.dirname(latex_path), exist_ok=True)
-        convert_tex_to_pdf(json_path, latex_path)
+        convert_json_to_tex(json_path, latex_path)
 
         # Convert LaTeX to PDF
         pdf_dir = "outputs/pdf"
         os.makedirs(pdf_dir, exist_ok=True)
-        render_latex_to_pdf(latex_path, pdf_dir)
+        convert_latex_to_pdf(latex_path, pdf_dir)
 
         pdf_path = "outputs/pdf/output_resume.pdf"
         return FileResponse(pdf_path, media_type='application/pdf', filename="resume.pdf")

@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from resume.generator import generate
-from resume.latex_utils import render_latex_to_pdf, escape_latex
+from resume.latex_utils import convert_latex_to_pdf, escape_latex
 from tools.tools_utils import count_pages_and_lines, generate_comparison_pdf
 
 @tool("save_resume_json")

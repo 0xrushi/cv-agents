@@ -2,7 +2,7 @@ import json
 import subprocess
 import os
 
-def render_latex_to_pdf(tex_file_path, output_dir):
+def convert_latex_to_pdf(tex_file_path, output_dir):
     """
     Renders a LaTeX file to PDF using pdflatex in non-interactive mode.
     
